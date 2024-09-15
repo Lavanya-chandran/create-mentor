@@ -1,7 +1,7 @@
 /** @format */
 
-import express from "express";
-import mentorController from "../controllers/mentorController.js";
+const express= require ("express");
+const mentorController= require ("../controllers/mentorController.js");
 const router = express.Router();
 
 router.post("/create", mentorController.createMentor);

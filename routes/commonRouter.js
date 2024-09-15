@@ -1,7 +1,7 @@
 /** @format */
 
-import express from "express";
-import commonController from "../controllers/commonController.js";
+const express= require ("express");
+const commonController= require("../controllers/commonController.js");
 const router = express.Router();
 
 router.put("/assign-mentor/:studentId/:mentorId",commonController.assignStudentToMentor);
